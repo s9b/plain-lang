@@ -25,7 +25,7 @@ Plain is built in ~500 lines of Python and has zero dependencies. It's designed 
 You need Python 3.8 or newer. No packages to install.
 
 ```bash
-git clone https://github.com/your-username/plain-lang
+git clone https://github.com/s9b/plain-lang
 cd plain-lang
 ```
 
