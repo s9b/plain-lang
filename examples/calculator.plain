@@ -1,0 +1,16 @@
+# calculator.plain — asks for two numbers and prints sum, difference, product
+
+say "Simple Calculator"
+
+set a to num ask "Enter first number: "
+set b to num ask "Enter second number: "
+
+say "Sum:        " + (a + b)
+say "Difference: " + (a - b)
+say "Product:    " + (a * b)
+
+if b is equal to 0 then
+    say "Can't divide by zero!"
+else
+    say "Quotient:   " + (a / b)
+end

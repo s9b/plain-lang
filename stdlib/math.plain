@@ -1,0 +1,33 @@
+# stdlib/math.plain — basic math functions written in Plain
+
+fn square n
+    return n * n
+end
+
+fn cube n
+    return n * n * n
+end
+
+fn abs n
+    if n > 0 then
+        return n
+    else
+        return 0 - n
+    end
+end
+
+fn max a b
+    if a > b then
+        return a
+    else
+        return b
+    end
+end
+
+fn min a b
+    if a < b then
+        return a
+    else
+        return b
+    end
+end

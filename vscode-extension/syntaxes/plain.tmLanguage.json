@@ -1,0 +1,45 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Plain",
+  "scopeName": "source.plain",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#numbers" },
+    { "include": "#function-def-name" },
+    { "include": "#builtins" },
+    { "include": "#keywords" }
+  ],
+  "repository": {
+    "comments": {
+      "name": "comment.line.number-sign.plain",
+      "match": "#.*$"
+    },
+    "strings": {
+      "name": "string.quoted.double.plain",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": []
+    },
+    "numbers": {
+      "name": "constant.numeric.plain",
+      "match": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    "function-def-name": {
+      "comment": "highlights the function name immediately after 'fn'",
+      "match": "\\b(fn)\\s+(\\w+)",
+      "captures": {
+        "1": { "name": "keyword.control.plain" },
+        "2": { "name": "entity.name.function.plain" }
+      }
+    },
+    "builtins": {
+      "name": "support.function.builtin.plain",
+      "match": "\\b(say|ask|num|str|len|random)\\b"
+    },
+    "keywords": {
+      "name": "keyword.control.plain",
+      "match": "\\b(set|to|if|then|else|end|return|repeat|times|while|and|or|not|import|with|in|add|at)\\b"
+    }
+  }
+}

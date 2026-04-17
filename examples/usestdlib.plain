@@ -1,0 +1,17 @@
+# usestdlib.plain — demos stdlib/math.plain and stdlib/strings.plain
+
+import "../stdlib/math.plain"
+import "../stdlib/strings.plain"
+
+say "--- Math functions ---"
+say "square 4 = " + square 4
+say "cube 3   = " + cube 3
+set neg to 0 - 8
+say "abs -8   = " + abs neg
+say "max 12 5 = " + max 12 5
+say "min 12 5 = " + min 12 5
+
+say "--- String functions ---"
+say "repeat_str 'ho' 3 = " + repeat_str "ho" 3
+say "is_empty ''       = " + is_empty ""
+say "is_empty 'hello'  = " + is_empty "hello"

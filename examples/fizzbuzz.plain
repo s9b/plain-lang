@@ -1,0 +1,33 @@
+# fizzbuzz.plain — classic FizzBuzz from 1 to 20
+# Uses counters instead of modulo (which Plain doesn't have yet)
+
+say "FizzBuzz 1 to 20:"
+
+set i    to 1
+set fc   to 0   # fizz counter — resets every 3
+set bc   to 0   # buzz counter — resets every 5
+
+while i < 21
+    set fc to fc + 1
+    set bc to bc + 1
+
+    if fc is equal to 3 and bc is equal to 5 then
+        say "FizzBuzz"
+        set fc to 0
+        set bc to 0
+    else
+        if fc is equal to 3 then
+            say "Fizz"
+            set fc to 0
+        else
+            if bc is equal to 5 then
+                say "Buzz"
+                set bc to 0
+            else
+                say i
+            end
+        end
+    end
+
+    set i to i + 1
+end

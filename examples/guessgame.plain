@@ -1,0 +1,23 @@
+# guessgame.plain — random number guessing game
+
+say "Guess the number (between 1 and 10)!"
+
+set secret to random 1 10
+set guessed to 0
+set tries to 0
+
+while guessed is equal to 0
+    set guess to num ask "Your guess: "
+    set tries to tries + 1
+
+    if guess is equal to secret then
+        say "Correct! You got it in " + tries + " tries."
+        set guessed to 1
+    else
+        if guess is less than secret then
+            say "Too low! Try again."
+        else
+            say "Too high! Try again."
+        end
+    end
+end

@@ -1,0 +1,17 @@
+# stdlib/strings.plain — string utility functions written in Plain
+
+fn repeat_str s n
+    set result to ""
+    repeat n times
+        set result to result + s
+    end
+    return result
+end
+
+fn is_empty s
+    if len s is equal to 0 then
+        return 1
+    else
+        return 0
+    end
+end

@@ -1,0 +1,9 @@
+# useutils.plain — imports utils.plain and demos its functions
+
+import "utils.plain"
+
+say "double 7 = " + double 7
+say "triple 4 = " + triple 4
+greet "Saaz"
+say "clamp 15 in [0, 10] = " + clamp 15 0 10
+say "clamp 5 in [0, 10] = " + clamp 5 0 10

@@ -1,0 +1,15 @@
+# hello.plain — hello world and basic variables
+
+say "Hello, world!"
+
+set name to "Saaz"
+set age to 21
+
+say "My name is " + name
+say "I am " + age + " years old"
+
+if age is greater than 18 then
+    say "You are an adult."
+else
+    say "You are a minor."
+end
